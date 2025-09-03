@@ -3,30 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tennis Coach BCN – Redirect</title>
-  <meta http-equiv="refresh" content="5; url=index-fr.html">
+  <title>Coach de Tennis BCN</title>
   <style>
-    body{font-family:Arial, sans-serif; max-width:720px; margin:40px auto; padding:0 16px;}
-    a{color:#0d6efd}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #faf3e0; /* beige pastel */
+      color: #5a4632; /* brun doux */
+    }
+    header {
+      background: #d9a066; /* ocre clair */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #a05a2c; /* ocre foncé */
+    }
+    .photo {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .photo img {
+      max-width: 250px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .tarif {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 8px;
+      background: #fff7e6; /* pastel très doux */
+    }
+    .contact {
+      background: #f4e3c1;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    footer {
+      background: #d9a066;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #a05a2c;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .lang {
+      margin-top: 10px;
+    }
+    .lang a {
+      color: #5a4632;
+      margin: 0 5px;
+      text-decoration: underline;
+    }
   </style>
-  <script>
-    (function(){
-      try {
-        var lang = (navigator.language || '').toLowerCase();
-        if (lang.startsWith('es')) location.replace('index-es.html');
-        else if (lang.startsWith('ca')) location.replace('index-cat.html');
-        else location.replace('index-fr.html');
-      } catch(e) {}
-    })();
-  </script>
 </head>
 <body>
-  <h1>Redirection…</h1>
-  <p>Nous vous redirigeons vers la version adaptée à votre langue.</p>
-  <ul>
-    <li><a href="index-fr.html">Français</a></li>
-    <li><a href="index-es.html">Español</a></li>
-    <li><a href="index-cat.html">Català</a></li>
-  </ul>
+  <header>
+    <h1>Coach de Tennis BCN</h1>
+    <nav>
+      <a href="#about">À propos</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#avis">Avis</a>
+      <a href="#contact">Contact</a>
+      <a href="#reservation">Réserver</a>
+    </nav>
+    <div class="lang">
+      <a href="index-fr.html">FR</a> | 
+      <a href="index-es.html">ES</a> | 
+      <a href="index-cat.html">CAT</a>
+    </div>
+  </header>
+
+  <section class="photo">
+    <img src="img_3_1756576806310.jpg" alt="Coach de tennis">
+  </section>
+
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Je suis entraîneur particulier de tennis à Barcelone, passionné par le sport et l’enseignement. Cours pour débutants, intermédiaires et avancés.</p>
+  </section>
+
+  <section id="tarifs">
+    <h2>Tarifs</h2>
+    <div class="tarif">Cours individuel : 30€/h</div>
+    <div class="tarif">Cours duo : 40€/h</div>
+    <div class="tarif">Pack 10 cours : -10%</div>
+  </section>
+
+  <section id="avis">
+    <h2>Avis</h2>
+    <p>"Un super coach, très pédagogue !" – Marie</p>
+    <p>"J’ai progressé rapidement grâce à lui." – Juan</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email : exemple@email.com</p>
+    <p>Téléphone : +34 600 000 000</p>
+  </section>
+
+  <section id="reservation" style="text-align: center;">
+    <a href="mailto:exemple@email.com" class="button">Réserver un cours</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Coach de Tennis BCN</p>
+  </footer>
 </body>
 </html>
