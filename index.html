@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tennis Coach BCN – Redirect</title>
+  <meta http-equiv="refresh" content="5; url=index-fr.html">
+  <style>
+    body{font-family:Arial, sans-serif; max-width:720px; margin:40px auto; padding:0 16px;}
+    a{color:#0d6efd}
+  </style>
+  <script>
+    (function(){
+      try {
+        var lang = (navigator.language || '').toLowerCase();
+        if (lang.startsWith('es')) location.replace('index-es.html');
+        else if (lang.startsWith('ca')) location.replace('index-cat.html');
+        else location.replace('index-fr.html');
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body>
+  <h1>Redirection…</h1>
+  <p>Nous vous redirigeons vers la version adaptée à votre langue.</p>
+  <ul>
+    <li><a href="index-fr.html">Français</a></li>
+    <li><a href="index-es.html">Español</a></li>
+    <li><a href="index-cat.html">Català</a></li>
+  </ul>
+</body>
+</html>
