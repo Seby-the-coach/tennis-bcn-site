@@ -3,70 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Entrenador de Tenis BCN</title>
+  <title>Entrenador de Tenis - Barcelona</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
-    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
-    section { padding: 40px; max-width: 900px; margin: auto; }
-    h1, h2 { color: #2c3e50; }
-    .tarif { border: 1px solid #ddd; padding: 20px; margin: 10px 0; border-radius: 8px; }
-    .contact { background: #f4f4f4; padding: 20px; border-radius: 8px; }
-    footer { background: #2c3e50; color: white; text-align: center; padding: 10px; margin-top: 30px; }
-    .button { display: inline-block; padding: 10px 20px; background: #27ae60; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-    .lang { margin-top: 10px; }
-    .lang a { color: #f1c40f; margin: 0 5px; text-decoration: underline; }
+    body {font-family: Arial, sans-serif; background:#fefaf4; color:#333; margin:0; text-align:center;}
+    header {background:#d4a373; color:white; padding:20px;}
+    header h1 {margin:0;}
+    .lang-buttons {margin-top:15px;}
+    .lang-buttons a {
+      display:inline-block; width:60px; height:60px; line-height:60px;
+      margin:5px; border-radius:50%; background:#9acd32; border:3px solid white;
+      color:#333; font-weight:bold; text-decoration:none; font-size:14px;
+      box-shadow:0px 4px 8px rgba(0,0,0,0.2);
+      transition:transform 0.2s, background-color 0.3s;
+    }
+    .lang-buttons a:hover {transform:scale(1.1); background:#7cb518;}
+    .photo {margin:20px auto;}
+    .photo img {max-width:250px; border-radius:50%; border:4px solid #d4a373;}
+    section {padding:20px; max-width:700px; margin:auto;}
+    footer {background:#d4a373; color:white; padding:15px; margin-top:30px;}
   </style>
 </head>
 <body>
   <header>
-    <h1>Entrenador de Tenis BCN</h1>
-    <nav>
-      <a href="#about">Sobre mí</a>
-      <a href="#tarifs">Precios</a>
-      <a href="#avis">Opiniones</a>
-      <a href="#contact">Contacto</a>
-      <a href="#reservation">Reserva</a>
-    </nav>
-    <div class="lang">
-      <a href="index-fr.html">FR</a> | <a href="index-es.html">ES</a> | <a href="index-cat.html">CAT</a>
-    </div>
-  </header>
-
-  <section id="about">
-    <h2>Sobre mí</h2>
-    <p>Soy entrenador particular de tenis en Barcelona. Ayudo tanto a principiantes como a jugadores avanzados a mejorar su técnica, progresar en su juego y ganar confianza en la pista.</p>
-  </section>
-
-  <section id="tarifs">
-    <h2>Clases y precios</h2>
-    <div class="tarif"><h3>Clase particular 1h</h3><p>35 €</p></div>
-    <div class="tarif"><h3>Bono 5 horas</h3><p>150 €</p></div>
-    <div class="tarif"><h3>Bono 10 horas</h3><p>280 €</p></div>
-  </section>
-
-  <section id="avis">
-    <h2>Opiniones</h2>
-    <p>"¡Gran entrenador, muy pedagógico y motivador!" – María</p>
-    <p>"He mejorado en solo unas pocas clases." – Carlos</p>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contacto</h2>
-    <p>Email : <a href="mailto:contact@votre-tennis-coach.com">contact@votre-tennis-coach.com</a></p>
-    <p>WhatsApp : <a href="https://wa.me/34600000000">+34 600 000 000</a></p>
-    <a class="button" href="mailto:contact@votre-tennis-coach.com">Reservar una clase</a>
-  </section>
-
-  <section id="reservation" class="contact">
-    <h2>Reserva online</h2>
-    <p>Elige directamente tu franja horaria disponible:</p>
-    <div class="calendly-inline-widget" data-url="https://calendly.com/tennis-bcn/1h" style="min-width:320px;height:630px;"></div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-  </section>
-
-  <footer>
-    <p>© 2025 Entrenador de Tenis BCN - Todos los derechos reservados</p>
-  </footer>
-</body>
-</html>
+    <h1>Tu Entrenador de Tenis en Barcelona</h1>
+    <div class="lang-buttons">
+      <a
