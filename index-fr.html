@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +7,32 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
       background-color: #fefaf4; /* fond pastel ocre clair */
       color: #333;
-      padding: 50px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
     }
-    h1 {
-      margin-bottom: 20px;
+    header {
+      background-color: #d4a373; /* ocre */
+      color: white;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
     }
     .lang-buttons {
-      margin-top: 20px;
+      margin-top: 15px;
     }
     .lang-buttons a {
       display: inline-block;
-      width: 70px;
-      height: 70px;
-      line-height: 70px;
-      margin: 10px;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      margin: 5px;
       border-radius: 50%;
       background-color: #9acd32; /* vert tennis */
-      border: 4px solid white;
+      border: 3px solid white;
       color: #333;
       font-weight: bold;
       text-decoration: none;
@@ -36,12 +42,62 @@
     }
     .lang-buttons a:hover {
       transform: scale(1.1);
-      background-color: #7cb518; /* vert plus foncé */
+      background-color: #7cb518;
+    }
+    .photo {
+      margin: 20px auto;
+    }
+    .photo img {
+      max-width: 250px;
+      border-radius: 50%;
+      border: 4px solid #d4a373;
+    }
+    section {
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+    footer {
+      background-color: #d4a373;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
     }
   </style>
-  <script>
-    // Détection automatique de la langue
-    const lang = navigator.language || navigator.userLanguage;
+</head>
+<body>
+  <header>
+    <h1>Votre Coach de Tennis à Barcelone</h1>
+    <div class="lang-buttons">
+      <a href="index-fr.html">FR</a>
+      <a href="index-es.html">ES</a>
+      <a href="index-cat.html">CAT</a>
+    </div>
+  </header>
 
-    if (lang.startsWith('fr')) {
-      window.location.href = "index-fr.html";
+  <div class="photo">
+    <img src="img_3_1756576806310.jpg" alt="Coach de tennis">
+  </div>
+
+  <section>
+    <h2>Bonjour !</h2>
+    <p>
+      Je m'appelle Seby et je propose des cours de tennis personnalisés à Barcelone.  
+      Que vous soyez débutant, amateur ou compétiteur, je vous aide à progresser 
+      dans une ambiance détendue et motivante.
+    </p>
+    <h3>✅ Ce que je propose :</h3>
+    <ul style="text-align:left; max-width:500px; margin:auto;">
+      <li>Entraînement individuel ou en petit groupe</li>
+      <li>Perfectionnement technique et tactique</li>
+      <li>Cours adaptés aux enfants comme aux adultes</li>
+    </ul>
+    <p><strong>📍 Disponible à Barcelone et alentours</strong></p>
+    <p><strong>📞 Contactez-moi : votre-email@mail.com</strong></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Seby - Coach de Tennis</p>
+  </footer>
+</body>
+</html>
