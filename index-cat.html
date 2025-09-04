@@ -3,70 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Entrenador de Tennis BCN</title>
+  <title>Entrenador de Tennis - Barcelona</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
-    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
-    section { padding: 40px; max-width: 900px; margin: auto; }
-    h1, h2 { color: #2c3e50; }
-    .tarif { border: 1px solid #ddd; padding: 20px; margin: 10px 0; border-radius: 8px; }
-    .contact { background: #f4f4f4; padding: 20px; border-radius: 8px; }
-    footer { background: #2c3e50; color: white; text-align: center; padding: 10px; margin-top: 30px; }
-    .button { display: inline-block; padding: 10px 20px; background: #27ae60; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-    .lang { margin-top: 10px; }
-    .lang a { color: #f1c40f; margin: 0 5px; text-decoration: underline; }
+    body {font-family: Arial, sans-serif; background:#fefaf4; color:#333; margin:0; text-align:center;}
+    header {background:#d4a373; color:#fff; padding:20px;}
+    header h1 {margin:0;}
+    .lang-buttons {margin-top:15px;}
+    .lang-buttons a{
+      display:inline-block;width:60px;height:60px;line-height:60px;margin:5px;border-radius:50%;
+      background:#9acd32;border:3px solid #fff;color:#333;font-weight:bold;text-decoration:none;font-size:14px;
+      box-shadow:0 4px 8px rgba(0,0,0,.2);transition:transform .2s, background-color .3s;
+    }
+    .lang-buttons a:hover{transform:scale(1.1);background:#7cb518;}
+    .photo{margin:20px auto;}
+    .photo img{max-width:250px;border-radius:50%;border:4px solid #d4a373;}
+    section{padding:20px;max-width:700px;margin:auto;text-align:left;}
+    section h2, section h3{text-align:center;}
+    footer{background:#d4a373;color:#fff;padding:15px;margin-top:30px;}
   </style>
 </head>
 <body>
   <header>
-    <h1>Entrenador de Tennis BCN</h1>
-    <nav>
-      <a href="#about">Sobre mi</a>
-      <a href="#tarifs">Preus</a>
-      <a href="#avis">Opinions</a>
-      <a href="#contact">Contacte</a>
-      <a href="#reservation">Reserva</a>
-    </nav>
-    <div class="lang">
-      <a href="index-fr.html">FR</a> | <a href="index-es.html">ES</a> | <a href="index-cat.html">CAT</a>
+    <h1>El teu Entrenador de Tennis a Barcelona</h1>
+    <div class="lang-buttons">
+      <a href="index-fr.html">FR</a>
+      <a href="index-es.html">ES</a>
+      <a href="index-cat.html">CAT</a>
     </div>
   </header>
 
-  <section id="about">
-    <h2>Sobre mi</h2>
-    <p>Soc entrenador particular de tennis a Barcelona. Ajudo tant a principiants com a jugadors avançats a millorar la seva tècnica, progressar en el seu joc i guanyar confiança a la pista.</p>
-  </section>
+  <div class="photo">
+    <img src="img_3_1756576806310.jpg" alt="Entrenador de tennis">
+  </div>
 
-  <section id="tarifs">
-    <h2>Classes i preus</h2>
-    <div class="tarif"><h3>Classe particular 1h</h3><p>35 €</p></div>
-    <div class="tarif"><h3>Pack 5 hores</h3><p>150 €</p></div>
-    <div class="tarif"><h3>Pack 10 hores</h3><p>280 €</p></div>
-  </section>
+  <section>
+    <h2>Benvingut!</h2>
+    <p>Sóc en Seby i ofereixo classes de tennis personalitzades a Barcelona.
+      Tant si ets principiant com avançat, t’ajudo a millorar en un ambient motivador.</p>
 
-  <section id="avis">
-    <h2>Opinions</h2>
-    <p>"Gran entrenador, molt pedagògic i motivador!" – Maria</p>
-    <p>"He millorat en només unes quantes classes." – Carles</p>
-  </section>
+    <h3>✅ El que ofereixo</h3>
+    <ul>
+      <li>Entrenament individual o en grups reduïts</li>
+      <li>Millora tècnica i tàctica</li>
+      <li>Classes per a infants i adults</li>
+    </ul>
 
-  <section id="contact" class="contact">
-    <h2>Contacte</h2>
-    <p>Email : <a href="mailto:contact@votre-tennis-coach.com">contact@votre-tennis-coach.com</a></p>
-    <p>WhatsApp : <a href="https://wa.me/34600000000">+34 600 000 000</a></p>
-    <a class="button" href="mailto:contact@votre-tennis-coach.com">Reservar una classe</a>
-  </section>
-
-  <section id="reservation" class="contact">
-    <h2>Reserva en línia</h2>
-    <p>Tria directament la teva franja horària disponible:</p>
-    <div class="calendly-inline-widget" data-url="https://calendly.com/tennis-bcn/1h" style="min-width:320px;height:630px;"></div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <p><strong>📍 Barcelona i rodalies</strong><br>
+       <strong>📞 Contacte: el-teu-email@mail.com</strong></p>
   </section>
 
   <footer>
-    <p>© 2025 Entrenador de Tennis BCN - Tots els drets reservats</p>
+    <p>© 2025 Seby - Entrenador de Tennis</p>
   </footer>
 </body>
 </html>
